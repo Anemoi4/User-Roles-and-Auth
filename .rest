@@ -1,0 +1,45 @@
+http://localhost:3000/
+
+###
+POST http://localhost:3000/signUp
+content-type: application/json
+
+{
+    "email": "vich3@gmail.com",
+    "password": "test123"
+}
+
+###
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "email": "vich3@gmail.com",
+    "password": "test123"
+}
+###
+
+POST http://localhost:3000/user
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjFlZmIxMWQzZmJlYmFkMWJkNTQ0NiIsImlhdCI6MTY0NjM5MTI1OCwiZXhwIjoxNjQ2NjUwNDU4fQ.Qhv0kZd7AKRAvvzZPE3-f5ByQuQl3KAi-cCBC3Iz9Lc"
+}
+###
+
+POST http://localhost:3000/admin
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjFlZmIxMWQzZmJlYmFkMWJkNTQ0NiIsImlhdCI6MTY0NjM5MTI1OCwiZXhwIjoxNjQ2NjUwNDU4fQ.Qhv0kZd7AKRAvvzZPE3-f5ByQuQl3KAi-cCBC3Iz9Lc"
+}
+
+###
+POST http://localhost:3000/auth/change-role
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjFlZmIxMWQzZmJlYmFkMWJkNTQ0NiIsImlhdCI6MTY0NjM5MTI1OCwiZXhwIjoxNjQ2NjUwNDU4fQ.Qhv0kZd7AKRAvvzZPE3-f5ByQuQl3KAi-cCBC3Iz9Lc",
+    "authSecret": "Your Secret",
+    "newRole": "ADMIN"
+}
